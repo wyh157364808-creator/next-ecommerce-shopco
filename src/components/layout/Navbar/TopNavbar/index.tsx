@@ -16,7 +16,7 @@ import CartBtn from "./CartBtn";
 const data: NavMenu = [
   {
     id: 1,
-    label: "Shop",
+    label: "All Products",
     type: "MenuList",
     children: [
       {
@@ -46,13 +46,6 @@ const data: NavMenu = [
     ],
   },
   {
-    id: 2,
-    type: "MenuItem",
-    label: "On Sale",
-    url: "/shop#on-sale",
-    children: [],
-  },
-  {
     id: 3,
     type: "MenuItem",
     label: "New Arrivals",
@@ -62,7 +55,7 @@ const data: NavMenu = [
   {
     id: 4,
     type: "MenuItem",
-    label: "Brands",
+    label: "About",
     url: "/shop#brands",
     children: [],
   },
