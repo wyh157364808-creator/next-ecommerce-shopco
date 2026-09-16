@@ -19,6 +19,14 @@ export const newArrivalsData: Product[] = [
       "/images/01-17/A06-179E.jpg",
       "/images/01-17/A06-179F.jpg",
     ],
+    detailImages: [
+      "/images/01-17/detail/detail-1.jpg",
+      "/images/01-17/detail/detail-2.jpg",
+      "/images/01-17/detail/detail-3.jpg",
+      "/images/01-17/detail/detail-4.jpg",
+      "/images/01-17/detail/detail-5.jpg",
+      "/images/01-17/detail/detail-6.jpg",
+    ],
     price: 102,
     discount: {
       amount: 0,
