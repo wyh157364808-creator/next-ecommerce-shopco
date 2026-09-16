@@ -13,34 +13,25 @@ type FaqItem = {
 
 const faqsData: FaqItem[] = [
   {
-    question: "What is the material of the t-shirt?",
+    question: "What is the mug made of?",
     answer:
-      "Provide details about the fabric type (e.g., cotton, polyester, blend), weight, and any specific features.",
+      "The mug is made from high-white porcelain clay — the same clay used for the flowers. It's a fine, high-quality material fired in a kiln at around 1320°C. After firing, the mug becomes durable, smooth, and completely safe for everyday use — you can drink from it normally.",
   },
   {
-    question: "What are the care instructions for the t-shirt?",
+    question:
+      "What about the glaze? Do you spray it on? I'm worried it might not be healthy.",
     answer:
-      "Outline recommended washing, drying, and ironing methods to maintain quality and longevity.",
+      "We never spray our glaze. We apply it by dipping or brushing instead — this gives us better control over the thickness and coverage, especially on the delicate flower details. Our glaze is 100% lead-free, so you can use it with complete peace of mind.",
   },
   {
-    question: "What is the design or print on the t-shirt made of?",
+    question: "Can the mug go in the dishwasher or microwave?",
     answer:
-      "Explain the material used for the design (e.g., vinyl, screen print, embroidery) and its durability.",
+      "A simple rinse with water is all it takes to keep it clean. Please do not put the mug in the microwave.",
   },
   {
-    question: "Is the t-shirt unisex or designed for specific genders?",
+    question: "Is each mug truly handmade?",
     answer:
-      "Indicate whether the shirt is suitable for both men and women or targeted towards a particular gender.",
-  },
-  {
-    question: "What are the shipping options and costs?",
-    answer:
-      "Provide information about shipping methods, estimated delivery times, and associated fees.",
-  },
-  {
-    question: "What is the return policy for the t-shirt?",
-    answer:
-      "Outline the return window, conditions, and refund or exchange procedures.",
+      "Yes — every piece is 100% handmade, which is why each mug is unique. No two are exactly alike.",
   },
 ];
 
@@ -63,5 +54,4 @@ const FaqContent = () => {
     </section>
   );
 };
-
 export default FaqContent;
