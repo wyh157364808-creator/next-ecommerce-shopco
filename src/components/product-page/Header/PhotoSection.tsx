@@ -29,7 +29,7 @@ const PhotoSection = ({
           src={selected}
           width={444}
           height={530}
-          className="rounded-md w-full h-full object-cover hover:scale-110 transition-all duration-500"
+          className="rounded-md w-full h-full object-contain hover:scale-110 transition-all duration-500"
           alt={data.title}
           priority
           unoptimized
