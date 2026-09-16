@@ -1,41 +1,41 @@
 "use client";
-import { useEffect, useState } from "react";
 import { integralCF } from "@/styles/fonts";
 import { cn } from "@/lib/utils";
 
-// 品牌条卖点（缓慢轮播）
-const brandNames = [
-  "FREE SHIPPING",
-  "HANDCRAFTED",
-  "FAST DELIVERY",
-];
+// 品牌条卖点（跑马灯连续滚动）
+const brandNames = ["FREE SHIPPING", "HANDCRAFTED", "FAST DELIVERY"];
 
 const Brands = () => {
-  const [activeIndex, setActiveIndex] = useState(0);
-
-  // 缓慢轮播：每4秒切换一个卖点
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setActiveIndex((prev) => (prev + 1) % brandNames.length);
-    }, 4000);
-    return () => clearInterval(timer);
-  }, []);
-
   return (
     <div className="bg-black py-6 md:py-10 overflow-hidden">
-      <div className="max-w-frame mx-auto px-4 xl:px-0 relative h-8 md:h-10 flex items-center justify-center">
-        {brandNames.map((brand, idx) => (
-          <span
-            key={brand}
-            className={cn(
-              integralCF.className,
-              "absolute text-white/90 text-xl md:text-2xl lg:text-3xl transition-opacity duration-1000",
-              idx === activeIndex ? "opacity-100" : "opacity-0"
-            )}
-          >
-            {brand}
-          </span>
-        ))}
+      <style>{`
+        @keyframes marquee {
+          0% { transform: translateX(0); }
+          100% { transform: translateX(-50%); }
+        }
+        .marquee-track {
+          animation: marquee 25s linear infinite;
+        }
+      `}</style>
+      <div className="flex overflow-hidden">
+        <div className="marquee-track flex shrink-0 whitespace-nowrap">
+          {/* 复制两遍实现无缝循环滚动 */}
+          {[0, 1].map((dup) => (
+            <div key={dup} className="flex shrink-0">
+              {brandNames.map((brand, i) => (
+                <span
+                  key={i}
+                  className={cn(
+                    integralCF.className,
+                    "text-white/90 text-xl md:text-2xl lg:text-3xl mx-10"
+                  )}
+                >
+                  {brand}
+                </span>
+              ))}
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );
