@@ -1,19 +1,31 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import PhotoSection from "./PhotoSection";
 import { Product } from "@/types/product.types";
 import { integralCF } from "@/styles/fonts";
 import { cn } from "@/lib/utils";
 import Rating from "@/components/ui/Rating";
-import ColorSelection from "./ColorSelection";
-import SizeSelection from "./SizeSelection";
 import AddToCardSection from "./AddToCardSection";
 
 const Header = ({ data }: { data: Product }) => {
+  // 主图状态（型号选择和缩略图共用）
+  const [selected, setSelected] = useState<string>(data.srcUrl);
+
+  // 从图片路径提取型号名：/images/01-17/A06-179A.jpg → A06-179A
+  const getModelName = (url: string) => {
+    const fileName = url.split("/").pop() ?? "";
+    return fileName.replace(/\.\w+$/, "");
+  };
+
   return (
     <>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
         <div>
-          <PhotoSection data={data} />
+          <PhotoSection
+            data={data}
+            selected={selected}
+            setSelected={setSelected}
+          />
         </div>
         <div>
           <h1
@@ -77,13 +89,33 @@ const Header = ({ data }: { data: Product }) => {
             )}
           </div>
           <p className="text-sm sm:text-base text-black/60 mb-5">
-            This graphic t-shirt which is perfect for any occasion. Crafted from
-            a soft and breathable fabric, it offers superior comfort and style.
+            Handmade ceramic flower coffee mug. Each piece is hand-thrown and
+            painted by artisans, with hand-pinched floral details and
+            food-safe underglaze. No two mugs are exactly alike.
           </p>
           <hr className="h-[1px] border-t-black/10 mb-5" />
-          <ColorSelection />
-          <hr className="h-[1px] border-t-black/10 my-5" />
-          <SizeSelection />
+
+          {/* ===== 型号选择器（替代 Select Colors / Choose Size） ===== */}
+          <div>
+            <p className="text-black/60 text-sm mb-3">Select Model</p>
+            <div className="flex flex-wrap gap-2">
+              {data.gallery.map((photo, i) => (
+                <button
+                  key={i}
+                  type="button"
+                  onClick={() => setSelected(photo)}
+                  className={cn(
+                    "px-4 py-2 rounded-full border text-sm font-medium transition-all",
+                    selected === photo
+                      ? "bg-black text-white border-black"
+                      : "border-black/20 text-black/70 hover:border-black"
+                  )}
+                >
+                  {getModelName(photo)}
+                </button>
+              ))}
+            </div>
+          </div>
           <hr className="hidden md:block h-[1px] border-t-black/10 my-5" />
           <AddToCardSection data={data} />
         </div>
@@ -91,5 +123,4 @@ const Header = ({ data }: { data: Product }) => {
     </>
   );
 };
-
 export default Header;
