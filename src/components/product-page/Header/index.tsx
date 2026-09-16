@@ -99,7 +99,7 @@ const Header = ({ data }: { data: Product }) => {
           <div>
             <p className="text-black/60 text-sm mb-3">Select Model</p>
             <div className="flex flex-wrap gap-2">
-              {data.gallery.map((photo, i) => (
+              {(data.gallery ?? []).map((photo, i) => (
                 <button
                   key={i}
                   type="button"
