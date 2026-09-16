@@ -5,7 +5,7 @@ import React, { useRef } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const ProductDetailsContent = ({ data }: { data: Product }) => {
-  const images = data.gallery ?? [];
+  const images = data.detailImages ?? data.gallery ?? [];
   const scrollRef = useRef<HTMLDivElement>(null);
 
   const scroll = (dir: number) => {
