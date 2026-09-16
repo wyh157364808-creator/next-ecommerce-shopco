@@ -24,7 +24,7 @@ const PhotoSection = ({
   return (
     <div className="flex flex-col">
       {/* 主图 */}
-      <div className="flex items-center justify-center bg-[#F0EEED] rounded-[13px] sm:rounded-[20px] w-full h-full max-h-[530px] min-h-[330px] lg:min-h-[380px] xl:min-h-[530px] overflow-hidden mb-3">
+      <div className="flex items-center justify-center bg-[#F0EEED] rounded-[13px] sm:rounded-[20px] w-full aspect-square overflow-hidden mb-3">
         <Image
           src={selected}
           width={444}
