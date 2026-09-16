@@ -7,18 +7,26 @@ import { Product } from "@/types/product.types";
 import { Review } from "@/types/review.types";
 
 export const newArrivalsData: Product[] = [
-  {
+    {
     id: 1,
-    title: "T-shirt with Tape Details",
-    srcUrl: "/images/pic1.png",
-    gallery: ["/images/pic1.png", "/images/pic10.png", "/images/pic11.png"],
-    price: 120,
+    title: "Handmade Flower Coffee Mug",
+    srcUrl: "/images/01-17/A06-179A.jpg",
+    gallery: [
+      "/images/01-17/A06-179A.jpg",
+      "/images/01-17/A06-179B.jpg",
+      "/images/01-17/A06-179C.jpg",
+      "/images/01-17/A06-179D.jpg",
+      "/images/01-17/A06-179E.jpg",
+      "/images/01-17/A06-179F.jpg",
+    ],
+    price: 102,
     discount: {
       amount: 0,
       percentage: 0,
     },
-    rating: 4.5,
+    rating: 5.0,
   },
+
   {
     id: 2,
     title: "Skinny Fit Jeans",
