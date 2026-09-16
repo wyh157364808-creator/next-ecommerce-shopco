@@ -1,11 +1,11 @@
 "use client";
-
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import React, { useState } from "react";
 import ProductDetailsContent from "./ProductDetailsContent";
 import ReviewsContent from "./ReviewsContent";
 import FaqContent from "./FaqContent";
+import { Product } from "@/types/product.types";
 
 type TabBtn = {
   id: number;
@@ -13,23 +13,13 @@ type TabBtn = {
 };
 
 const tabBtnData: TabBtn[] = [
-  {
-    id: 1,
-    label: "Product Details",
-  },
-  {
-    id: 2,
-    label: "Rating & Reviews",
-  },
-  {
-    id: 3,
-    label: "FAQs",
-  },
+  { id: 1, label: "Product Details" },
+  { id: 2, label: "Rating & Reviews" },
+  { id: 3, label: "FAQs" },
 ];
 
-const Tabs = () => {
+const Tabs = ({ data }: { data: Product }) => {
   const [active, setActive] = useState<number>(1);
-
   return (
     <div>
       <div className="flex items-center mb-6 sm:mb-8 overflow-x-auto">
@@ -51,12 +41,11 @@ const Tabs = () => {
         ))}
       </div>
       <div className="mb-12 sm:mb-16">
-        {active === 1 && <ProductDetailsContent />}
+        {active === 1 && <ProductDetailsContent data={data} />}
         {active === 2 && <ReviewsContent />}
         {active === 3 && <FaqContent />}
       </div>
     </div>
   );
 };
-
 export default Tabs;
