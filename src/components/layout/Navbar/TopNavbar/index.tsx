@@ -13,7 +13,6 @@ import Image from "next/image";
 import InputGroup from "@/components/ui/input-group";
 import ResTopNavbar from "./ResTopNavbar";
 import CartBtn from "./CartBtn";
-
 const data: NavMenu = [
   {
     id: 1,
@@ -68,7 +67,6 @@ const data: NavMenu = [
     children: [],
   },
 ];
-
 const TopNavbar = () => {
   return (
     <nav className="sticky top-0 bg-white z-20">
@@ -84,7 +82,7 @@ const TopNavbar = () => {
               "text-2xl lg:text-[32px] mb-2 mr-3 lg:mr-10",
             ])}
           >
-            SHOP.CO
+            BEI Pottery
           </Link>
         </div>
         <NavigationMenu className="hidden md:flex mr-2 lg:mr-7">
@@ -146,5 +144,4 @@ const TopNavbar = () => {
     </nav>
   );
 };
-
 export default TopNavbar;
