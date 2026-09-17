@@ -33,7 +33,6 @@ export const newArrivalsData: Product[] = [
     },
     rating: 5.0,
   },
-
 {
   id: 2,
   title: "Handmade Flower Coffee Mug 01-18",
@@ -50,6 +49,14 @@ export const newArrivalsData: Product[] = [
     "/images/01-18/A06-189A-2A.jpg",
     "/images/01-18/A06-189B-2A.jpg",
   ],
+  detailImages: [
+    "/images/01-18/detail/detail-10.jpg",
+    "/images/01-18/detail/detail-11.jpg",
+    "/images/01-18/detail/detail-12.jpg",
+    "/images/01-18/detail/detail-13.jpg",
+    "/images/01-18/detail/detail-14.jpg",
+    "/images/01-18/detail/detail-15.jpg",
+  ],
   price: 102,
   discount: {
     amount: 0,
@@ -57,7 +64,6 @@ export const newArrivalsData: Product[] = [
   },
   rating: 5,
 },
-
   {
     id: 3,
     title: "Chechered Shirt",
