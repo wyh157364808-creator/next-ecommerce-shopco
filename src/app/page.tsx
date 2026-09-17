@@ -34,18 +34,30 @@ export const newArrivalsData: Product[] = [
     rating: 5.0,
   },
 
-  {
-    id: 2,
-    title: "Skinny Fit Jeans",
-    srcUrl: "/images/pic2.png",
-    gallery: ["/images/pic2.png"],
-    price: 260,
-    discount: {
-      amount: 0,
-      percentage: 20,
-    },
-    rating: 3.5,
+{
+  id: 2,
+  title: "Handmade Flower Coffee Mug 01-18",
+  srcUrl: "/images/01-18/A06-186-2A.jpg",
+  gallery: [
+    "/images/01-18/A06-186-2A.jpg",
+    "/images/01-18/A06-186B.jpg",
+    "/images/01-18/A06-186C-2A.jpg",
+    "/images/01-18/A06-186D-2A.jpg",
+    "/images/01-18/A06-186E-2A.jpg",
+    "/images/01-18/A06-186F-2A.jpg",
+    "/images/01-18/A06-186G-2A.jpg",
+    "/images/01-18/A06-186H-2A.jpg",
+    "/images/01-18/A06-189A-2A.jpg",
+    "/images/01-18/A06-189B-2A.jpg",
+  ],
+  price: 102,
+  discount: {
+    amount: 0,
+    percentage: 0,
   },
+  rating: 5,
+},
+
   {
     id: 3,
     title: "Chechered Shirt",
