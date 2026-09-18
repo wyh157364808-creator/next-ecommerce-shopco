@@ -9,13 +9,11 @@ import Header from "@/components/product-page/Header";
 import Tabs from "@/components/product-page/Tabs";
 import { Product } from "@/types/product.types";
 import { notFound } from "next/navigation";
-
 const data: Product[] = [
   ...newArrivalsData,
   ...topSellingData,
   ...relatedProductData,
 ];
-
 export default function ProductPage({
   params,
 }: {
@@ -24,10 +22,16 @@ export default function ProductPage({
   const productData = data.find(
     (product) => product.id === Number(params.slug[0])
   );
-
   if (!productData?.title) {
     notFound();
   }
+
+  // ========= 新增随机推荐逻辑 =========
+  const relatedProducts = [...data]
+    .filter(item => item.id !== productData.id) // 排除当前查看产品
+    .sort(() => Math.random() - 0.5) // 随机打乱
+    .slice(0,4); // 只取4个
+  // =====================================
 
   return (
     <main>
@@ -40,7 +44,8 @@ export default function ProductPage({
        <Tabs data={productData} />
       </div>
       <div className="mb-[50px] sm:mb-20">
-        <ProductListSec title="You might also like" data={relatedProductData} />
+        {/* 这里由原来的 relatedProductData 改成我们生成的 relatedProducts */}
+        <ProductListSec title="You might also like" data={relatedProducts} />
       </div>
     </main>
   );
