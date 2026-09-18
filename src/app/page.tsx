@@ -96,7 +96,6 @@ export const newArrivalsData: Product[] = [
   rating: 5,
 },
  {
- {
   id: 4,
   title: "Handmade Porcelain Flower Cup 01-20",
   srcUrl: "/images/01-20/A06-203A.jpg",
