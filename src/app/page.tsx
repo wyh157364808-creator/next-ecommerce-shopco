@@ -82,7 +82,13 @@ export const newArrivalsData: Product[] = [
     "/images/01-19/A06-199B.jpg",
     "/images/01-19/A06-199C.jpg"
   ],
-  price: 128,
+    detailImages: [
+    "/images/01-19/detail/detail-20.jpg",
+    "/images/01-19/detail/detail-21.jpg",
+    "/images/01-19/detail/detail-22.jpg",
+    "/images/01-19/detail/detail-23.jpg"
+  ],
+  price: 102,
   discount: {
     amount: 0,
     percentage: 0
