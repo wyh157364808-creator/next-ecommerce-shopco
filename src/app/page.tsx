@@ -111,6 +111,14 @@ export const newArrivalsData: Product[] = [
     "/images/01-20/A06-208A.jpg",
     "/images/01-20/A06-208B.jpg"
   ],
+     detailImages: [
+    "/images/01-20/detail/detail-30.jpg",
+    "/images/01-20/detail/detail-31.jpg",
+    "/images/01-20/detail/detail-32.jpg",
+    "/images/01-20/detail/detail-33.jpg",
+    "/images/01-20/detail/detail-34.jpg",
+    "/images/01-20/detail/detail-35.jpg"
+  ],
   price: 102,
   discount: {
     amount: 0,
@@ -118,6 +126,7 @@ export const newArrivalsData: Product[] = [
   },
   rating: 5
 }
+];
 export const topSellingData: Product[] = [
   {
     id: 5,
