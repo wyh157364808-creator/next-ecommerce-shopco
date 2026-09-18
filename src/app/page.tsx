@@ -64,18 +64,34 @@ export const newArrivalsData: Product[] = [
   },
   rating: 5,
 },
-  {
-    id: 3,
-    title: "Chechered Shirt",
-    srcUrl: "/images/pic3.png",
-    gallery: ["/images/pic3.png"],
-    price: 180,
-    discount: {
-      amount: 0,
-      percentage: 0,
-    },
-    rating: 4.5,
+ {
+  id: 3,
+  title: "Handmade Porcelain Flower Vase 01-19",
+  srcUrl: "/images/01-19/A06-190A.jpg",
+  gallery: [
+    "/images/01-19/A06-190A.jpg",
+    "/images/01-19/A06-190B.jpg",
+    "/images/01-19/A06-190C.jpg",
+    "/images/01-19/A06-190D.jpg",
+    "/images/01-19/A06-190E.jpg",
+    "/images/01-19/A06-190F.jpg",
+    "/images/01-19/A06-190G.jpg"
+  ],
+ detailImages: [
+    "/images/01-19/detail/detail-20.jpg",
+    "/images/01-19/detail/detail-21.jpg",
+    "/images/01-19/detail/detail-22.jpg",
+    "/images/01-19/detail/detail-23.jpg"
+  ],
+  price: 128,
+  discount: {
+    amount: 0,
+    percentage: 0
   },
+  rating: 5,
+  productType: "vase"
+},
+
   {
     id: 4,
     title: "Sleeve Striped T-shirt",
