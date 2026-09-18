@@ -71,11 +71,16 @@ export const newArrivalsData: Product[] = [
   gallery: [
     "/images/01-19/A06-190A.jpg",
     "/images/01-19/A06-190B.jpg",
-    "/images/01-19/A06-190C.jpg",
-    "/images/01-19/A06-190D.jpg",
-    "/images/01-19/A06-190E.jpg",
-    "/images/01-19/A06-190F.jpg",
-    "/images/01-19/A06-190G.jpg"
+    "/images/01-19/A06-198A.jpg",
+    "/images/01-19/A06-198B.jpg",
+    "/images/01-19/A06-198C.jpg",
+    "/images/01-19/A06-198D.jpg",
+    "/images/01-19/A06-198E.jpg",
+    "/images/01-19/A06-198F.jpg",
+    "/images/01-19/A06-198G.jpg",
+    "/images/01-19/A06-199A.jpg",
+    "/images/01-19/A06-199B.jpg",
+    "/images/01-19/A06-199C.jpg"
   ],
   price: 128,
   discount: {
@@ -84,6 +89,7 @@ export const newArrivalsData: Product[] = [
   },
   rating: 5,
 },
+
 
   {
     id: 4,
