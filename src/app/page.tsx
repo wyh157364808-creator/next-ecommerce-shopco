@@ -26,6 +26,7 @@ export const newArrivalsData: Product[] = [
       "/images/01-17/detail/detail-5.jpg",
       "/images/01-17/detail/detail-6.jpg",
     ],
+    category: "cup", // 杯子
     price: 102,
     discount: {
       amount: 0,
@@ -57,6 +58,7 @@ export const newArrivalsData: Product[] = [
     "/images/01-18/detail/detail-14.jpg",
     "/images/01-18/detail/detail-15.jpg",
   ],
+  category: "cup", // 杯子
   price: 102,
   discount: {
     amount: 0,
@@ -88,6 +90,7 @@ export const newArrivalsData: Product[] = [
     "/images/01-19/detail/detail-22.jpg",
     "/images/01-19/detail/detail-23.jpg"
   ],
+  category: "cup", // 杯子
   price: 102,
   discount: {
     amount: 0,
@@ -119,6 +122,7 @@ export const newArrivalsData: Product[] = [
     "/images/01-20/detail/detail-34.jpg",
     "/images/01-20/detail/detail-35.jpg"
   ],
+  category: "cup", // 杯子
   price: 102,
   discount: {
     amount: 0,
