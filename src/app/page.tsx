@@ -96,6 +96,7 @@ export const newArrivalsData: Product[] = [
   rating: 5,
 },
  {
+ {
   id: 4,
   title: "Handmade Porcelain Flower Cup 01-20",
   srcUrl: "/images/01-20/A06-203A.jpg",
@@ -109,15 +110,23 @@ export const newArrivalsData: Product[] = [
     "/images/01-20/A06-207C.jpg",
     "/images/01-20/A06-207D.jpg",
     "/images/01-20/A06-208A.jpg",
-    "/images/01-20/A06-208B.jpg",
+    "/images/01-20/A06-208B.jpg"
+  ],
+    detailImages: [
+    "/images/01-20/detail/detail-30.jpg",
+    "/images/01-20/detail/detail-31.jpg",
+    "/images/01-20/detail/detail-32.jpg",
+    "/images/01-20/detail/detail-33.jpg",
+    "/images/01-20/detail/detail-34.jpg",
+    "/images/01-20/detail/detail-35.jpg",
   ],
   price: 102,
   discount: {
     amount: 0,
     percentage: 0
   },
-  rating: 5,
-},
+  rating: 5
+}
 export const topSellingData: Product[] = [
   {
     id: 5,
