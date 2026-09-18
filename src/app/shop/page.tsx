@@ -1,3 +1,4 @@
+"use client";
 import BreadcrumbShop from "@/components/shop-page/BreadcrumbShop";
 import {
   Select,
