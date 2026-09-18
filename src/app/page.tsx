@@ -95,8 +95,6 @@ export const newArrivalsData: Product[] = [
   },
   rating: 5,
 },
-
-
  {
   id: 4,
   title: "Handmade Porcelain Flower Cup 01-20",
@@ -128,8 +126,6 @@ export const newArrivalsData: Product[] = [
   },
   rating: 5,
 },
-
-
 export const topSellingData: Product[] = [
   {
     id: 5,
