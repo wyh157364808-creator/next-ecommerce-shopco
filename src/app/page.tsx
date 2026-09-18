@@ -77,7 +77,7 @@ export const newArrivalsData: Product[] = [
     "/images/01-19/A06-190F.jpg",
     "/images/01-19/A06-190G.jpg"
   ],
- detailImages: [
+  detailImages: [
     "/images/01-19/detail/detail-20.jpg",
     "/images/01-19/detail/detail-21.jpg",
     "/images/01-19/detail/detail-22.jpg",
@@ -89,9 +89,8 @@ export const newArrivalsData: Product[] = [
     percentage: 0
   },
   rating: 5,
-  productType: "vase"
+  productType: "vase",
 },
-
   {
     id: 4,
     title: "Sleeve Striped T-shirt",
