@@ -97,19 +97,38 @@ export const newArrivalsData: Product[] = [
 },
 
 
-  {
-    id: 4,
-    title: "Sleeve Striped T-shirt",
-    srcUrl: "/images/pic4.png",
-    gallery: ["/images/pic4.png", "/images/pic10.png", "/images/pic11.png"],
-    price: 160,
-    discount: {
-      amount: 0,
-      percentage: 30,
-    },
-    rating: 4.5,
+ {
+  id: 4,
+  title: "Handmade Porcelain Flower Cup 01-20",
+  srcUrl: "/images/01-20/A06-203A.jpg",
+  gallery: [
+    "/images/01-20/A06-203A.jpg",
+    "/images/01-20/A06-206A.jpg",
+    "/images/01-20/A06-206B.jpg",
+    "/images/01-20/A06-206C.jpg",
+    "/images/01-20/A06-207A.jpg",
+    "/images/01-20/A06-207B.jpg",
+    "/images/01-20/A06-207C.jpg",
+    "/images/01-20/A06-207D.jpg",
+    "/images/01-20/A06-208A.jpg",
+    "/images/01-20/A06-208B.jpg",
+  ],
+     detailImages: [
+    "/images/01-20/detail/detail-30.jpg",
+    "/images/01-20/detail/detail-31.jpg",
+    "/images/01-20/detail/detail-32.jpg",
+    "/images/01-20/detail/detail-33.jpg",
+    "/images/01-20/detail/detail-34.jpg",
+    "/images/01-20/detail/detail-35.jpg",
+  ],
+  price: 102,
+  discount: {
+    amount: 0,
+    percentage: 0
   },
-];
+  rating: 5,
+},
+
 
 export const topSellingData: Product[] = [
   {
