@@ -8,6 +8,7 @@ export type Product = {
   srcUrl: string;
   gallery?: string[];
   detailImages?: string[];
+  category?: string; // ✅ 新增这一行
   price: number;
   discount: Discount;
   rating: number;
