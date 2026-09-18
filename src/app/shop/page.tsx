@@ -22,11 +22,16 @@ import {
   PaginationPrevious,
 } from "@/components/ui/pagination";
 import { useSearchParams } from "next/navigation";
+import { useState } from "react";
 
 export default function ShopPage() {
   // 读取url上 ?category=xxx 参数
   const searchParams = useSearchParams();
   const categoryParam = searchParams.get("category");
+  // 当前页码，默认第1页
+  const [currentPage, setCurrentPage] = useState(1);
+  // 每页6个产品
+  const PAGE_SIZE = 6;
 
   // 合并全部产品
   const allProducts = [
@@ -41,6 +46,11 @@ export default function ShopPage() {
     if (!categoryParam) return true;
     return product.category === categoryParam;
   });
+
+  // 计算分页切片
+  const totalPages = Math.ceil(filteredProducts.length / PAGE_SIZE);
+  const startIndex = (currentPage - 1) * PAGE_SIZE;
+  const paginatedProducts = filteredProducts.slice(startIndex, startIndex + PAGE_SIZE);
 
   return (
     <main className="pb-20">
@@ -67,7 +77,7 @@ export default function ShopPage() {
               </div>
               <div className="flex flex-col sm:items-center sm:flex-row">
                 <span className="text-sm md:text-base text-black/60 mr-3">
-                  Showing {filteredProducts.length} Products
+                  Showing {startIndex + 1}-{Math.min(startIndex + PAGE_SIZE, filteredProducts.length)} of {filteredProducts.length} Products
                 </span>
                 <div className="flex items-center">
                   Sort by:{" "}
@@ -85,69 +95,35 @@ export default function ShopPage() {
               </div>
             </div>
             <div className="w-full grid grid-cols-1 xs:grid-cols-2 sm:grid-cols-3 md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-5">
-              {filteredProducts.map((product) => (
+              {paginatedProducts.map((product) => (
                 <ProductCard key={product.id} data={product} />
               ))}
             </div>
             <hr className="border-t-black/10" />
+            {/* 动态分页 */}
             <Pagination className="justify-between">
-              <PaginationPrevious href="#" className="border border-black/10" />
+              <PaginationPrevious
+                onClick={() => setCurrentPage(p => Math.max(1, p - 1))}
+                className="border border-black/10 cursor-pointer"
+              />
               <PaginationContent>
-                <PaginationItem>
-                  <PaginationLink
-                    href="#"
-                    className="text-black/50 font-medium text-sm"
-                    isActive
-                  >
-                    1
-                  </PaginationLink>
-                </PaginationItem>
-                <PaginationItem>
-                  <PaginationLink
-                    href="#"
-                    className="text-black/50 font-medium text-sm"
-                  >
-                    2
-                  </PaginationLink>
-                </PaginationItem>
-                <PaginationItem className="hidden lg:block">
-                  <PaginationLink
-                    href="#"
-                    className="text-black/50 font-medium text-sm"
-                  >
-                    3
-                  </PaginationLink>
-                </PaginationItem>
-                <PaginationItem>
-                  <PaginationEllipsis className="text-black/50 font-medium text-sm" />
-                </PaginationItem>
-                <PaginationItem className="hidden lg:block">
-                  <PaginationLink
-                    href="#"
-                    className="text-black/50 font-medium text-sm"
-                  >
-                    8
-                  </PaginationLink>
-                </PaginationItem>
-                <PaginationItem className="hidden sm:block">
-                  <PaginationLink
-                    href="#"
-                    className="text-black/50 font-medium text-sm"
-                  >
-                    9
-                  </PaginationLink>
-                </PaginationItem>
-                <PaginationItem>
-                  <PaginationLink
-                    href="#"
-                    className="text-black/50 font-medium text-sm"
-                  >
-                    10
-                  </PaginationLink>
-                </PaginationItem>
+                {Array.from({ length: totalPages }, (_, i) => i + 1).map((pageNum) => (
+                  <PaginationItem key={pageNum}>
+                    <PaginationLink
+                      onClick={() => setCurrentPage(pageNum)}
+                      isActive={currentPage === pageNum}
+                      className="cursor-pointer"
+                    >
+                      {pageNum}
+                    </PaginationLink>
+                  </PaginationItem>
+                ))}
               </PaginationContent>
 
-              <PaginationNext href="#" className="border border-black/10" />
+              <PaginationNext
+                onClick={() => setCurrentPage(p => Math.min(totalPages, p + 1))}
+                className="border border-black/10 cursor-pointer"
+              />
             </Pagination>
           </div>
         </div>
