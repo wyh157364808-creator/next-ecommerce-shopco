@@ -428,9 +428,75 @@ export const newArrivalsData: Product[] = [
 
 // ✅ topSellingData 清空模板T恤，放你的爆款产品
 export const topSellingData: Product[] = [
-  // 后续新增产品放这里，现在先空着也可以
+  {
+    id: 16,
+    title: "Handmade Porcelain Flower Vase 50",
+    srcUrl: "/images/50/KA26-135A-2A.jpg",
+    gallery: [
+      "/images/50/KA26-135A-2A.jpg",
+      "/images/50/KA26-245A-2A.jpg",
+      "/images/50/KA26-245B-2A.jpg",
+      "/images/50/KA26-245C-2A.jpg",
+      "/images/50/KA26-245D-2A.jpg",
+    ],
+    detailImages: [
+      "/images/50/detail/detail-300.jpg",
+      "/images/50/detail/detail-301.jpg",
+      "/images/50/detail/detail-302.jpg",
+      "/images/50/detail/detail-303.jpg",
+    ],
+    category: "vase",
+    price: 102,
+    discount: {
+      amount: 0,
+      percentage: 0
+    },
+    rating: 5
+  },
+  {
+    id: 17,
+    title: "Handmade Porcelain Flower Vase 51",
+    srcUrl: "/images/51/A26-014A.jpg",
+    gallery: [
+      "/images/51/A26-014A.jpg",
+    ],
+    detailImages: [
+      "/images/51/detail/detail-400.jpg",
+      "/images/51/detail/detail-401.jpg",
+      "/images/51/detail/detail-402.jpg",
+      "/images/51/detail/detail-403.jpg",
+    ],
+    category: "vase",
+    price: 102,
+    discount: {
+      amount: 0,
+      percentage: 0
+    },
+    rating: 5
+  },
+  {
+    id: 18,
+    title: "Handmade Porcelain Flower Vase 52",
+    srcUrl: "/images/52/A26-040B.jpg",
+    gallery: [
+      "/images/52/A26-040B.jpg",
+      "/images/52/A26-040C.jpg",
+      "/images/52/A26-040D.jpg",
+      "/images/52/A26-040E.jpg",
+    ],
+    detailImages: [
+      "/images/52/detail/detail-500.jpg",
+      "/images/52/detail/detail-501.jpg",
+    ],
+    category: "vase",
+    price: 102,
+    discount: {
+      amount: 0,
+      percentage: 0
+    },
+    rating: 5
+  }
 ];
-
 // ✅ relatedProductData 清空模板T恤（这个数组给详情页YOU MIGHT ALSO LIKE使用）
 export const relatedProductData: Product[] = [
   // 这里不用填，详情页我们已经写了随机取全部产品，这个数组现在清空
