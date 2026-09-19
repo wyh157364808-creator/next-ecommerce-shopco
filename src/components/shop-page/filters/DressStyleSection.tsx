@@ -31,7 +31,6 @@ const dressStylesData: DressStyle[] = [
 ];
 const DressStyleSection = () => {
   return (
-    {/* 增加这一层，实现隐藏 */}
     <div className="hidden">
       <Accordion type="single" collapsible defaultValue="filter-style">
         <AccordionItem value="filter-style" className="border-none">
