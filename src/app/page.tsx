@@ -130,6 +130,31 @@ export const newArrivalsData: Product[] = [
       percentage: 0
     },
     rating: 5
+  },
+   {
+    id: 5,
+    title: "Hand-Pinched Porcelain Floral Cup 01-21",
+    srcUrl: "/images/01-21/A06-210A.jpg",
+    gallery: [
+      "/images/01-21/A06-210A.jpg",
+      "/images/01-21/A06-210B.jpg",
+      "/images/01-21/A06-210C.jpg",
+      "/images/01-21/A06-211A.jpg",
+    ],
+    detailImages: [
+      "/images/01-21/detail/detail-40.jpg",
+      "/images/01-21/detail/detail-41.jpg",
+      "/images/01-21/detail/detail-42.jpg",
+      "/images/01-21/detail/detail-43.jpg",
+      "/images/01-21/detail/detail-44.jpg",
+    ],
+    category: "cup", // 杯子
+    price: 102,
+    discount: {
+      amount: 0,
+      percentage: 0
+    },
+    rating: 5
   }
 ];
 
