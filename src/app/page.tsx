@@ -91,7 +91,7 @@ export const newArrivalsData: Product[] = [
       "/images/01-19/detail/detail-22.jpg",
       "/images/01-19/detail/detail-23.jpg"
     ],
-    category: "vase", //❗这里修正！01-19是花瓶，原来写cup错了
+    category: "cup", // 杯子套装
     price: 102,
     discount: {
       amount: 0,
@@ -399,7 +399,31 @@ export const newArrivalsData: Product[] = [
       percentage: 0
     },
     rating: 5
+  },
+    {
+    id: 15,
+    title: "Handcrafted Porcelain Cup Set 01-31",
+    srcUrl: "/images/01-31/KA26-281-3A.jpg",
+    gallery: [
+      "/images/01-31/KA26-281-3A.jpg",
+      "/images/01-31/KA26-281-5A.jpg",
+    ],
+    detailImages: [
+      "/images/01-31/detail/detail-200.jpg",
+      "/images/01-31/detail/detail-201.jpg",
+      "/images/01-31/detail/detail-202.jpg",
+      "/images/01-31/detail/detail-203.jpg",
+      "/images/01-31/detail/detail-204.jpg",
+    ],
+    category: "cup", // 杯子套装
+    price: 102,
+    discount: {
+      amount: 0,
+      percentage: 0
+    },
+    rating: 5
   }
+
 ];
 
 // ✅ topSellingData 清空模板T恤，放你的爆款产品
