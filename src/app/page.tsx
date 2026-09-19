@@ -437,7 +437,6 @@ export const relatedProductData: Product[] = [
 ];
 
 export const reviewsData: Review[] = [];
-
 export default function Home() {
   return (
     <>
@@ -445,7 +444,7 @@ export default function Home() {
       <Brands />
       <main className="my-[50px] sm:my-[72px]">
         <ProductListSec
-          title="NEW ARRIVALS"
+          title="Fresh Flower Cups"
           data={newArrivalsData}
           viewAllLink="/shop#new-arrivals"
         />
@@ -454,7 +453,7 @@ export default function Home() {
         </div>
         <div className="mb-[50px] sm:mb-20">
           <ProductListSec
-            title="top selling"
+            title="Chinese Minimalist Porcelain Vases"
             data={topSellingData}
             viewAllLink="/shop#top-selling"
           />
@@ -467,3 +466,4 @@ export default function Home() {
     </>
   );
 }
+
