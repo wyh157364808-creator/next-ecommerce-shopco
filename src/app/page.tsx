@@ -155,6 +155,36 @@ export const newArrivalsData: Product[] = [
       percentage: 0
     },
     rating: 5
+  },
+   {
+    id: 6,
+    title: "Artisan Porcelain Flower Tea Cup 01-21-1",
+    srcUrl: "/images/01-22-1/A06-227A.jpg",
+    gallery: [
+       "/images/01-22-1/A06-227A.jpg",
+       "/images/01-22-1/A06-227B.jpg",
+       "/images/01-22-1/A06-227C.jpg",
+       "/images/01-22-1/A06-227D.jpg",
+       "/images/01-22-1/A06-227F.jpg",
+       "/images/01-22-1/A06-227G.jpg",
+       "/images/01-22-1/A06-227H.jpg",
+       "/images/01-22-1/A06-227J.jpg",
+       "/images/01-22-1/A06-227K.jpg",
+    ],
+    detailImages: [
+      "/images/01-21-1/detail/detail-60.jpg",
+      "/images/01-21-1/detail/detail-61.jpg",
+      "/images/01-21-1/detail/detail-62.jpg",
+      "/images/01-21-1/detail/detail-63.jpg",
+      "/images/01-21-1/detail/detail-64.jpg",
+    ],
+    category: "cup", // 杯子
+    price: 102,
+    discount: {
+      amount: 0,
+      percentage: 0
+    },
+    rating: 5
   }
 ];
 
