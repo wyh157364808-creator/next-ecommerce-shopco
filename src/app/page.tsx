@@ -212,6 +212,35 @@ export const newArrivalsData: Product[] = [
       percentage: 0
     },
     rating: 5
+  },
+    {
+    id: 8,
+    title: "Handmade Porcelain Flower Cup 01-23",
+    srcUrl: "/images/01-23/A06-236A.jpg",
+    gallery: [
+      "/images/01-23/A06-236A.jpg",
+      "/images/01-23/A06-236B.jpg",
+      "/images/01-23/A06-236C.jpg",
+      "/images/01-23/A06-236D.jpg",
+      "/images/01-23/A06-236E.jpg",
+      "/images/01-23/A06-237A.jpg",
+      "/images/01-23/A06-238B.jpg",
+      "/images/01-23/A06-238C.jpg",
+    ],
+    detailImages: [
+      "/images/01-23/detail/detail-70.jpg",
+      "/images/01-23/detail/detail-71.jpg",
+      "/images/01-23/detail/detail-72.jpg",
+      "/images/01-23/detail/detail-73.jpg",
+      "/images/01-23/detail/detail-74.jpg",
+    ],
+    category: "cup", // 杯子
+    price: 102,
+    discount: {
+      amount: 0,
+      percentage: 0
+    },
+    rating: 5
   }
 ];
 
