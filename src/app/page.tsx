@@ -467,7 +467,7 @@ export const topSellingData: Product[] = [
       "/images/51/detail/detail-403.jpg",
     ],
     category: "vase",
-    price: 458,
+    price: 428,
     discount: {
       amount: 0,
       percentage: 0
@@ -514,7 +514,7 @@ export const topSellingData: Product[] = [
       "/images/53/detail/detail-603.jpg",
     ],
     category: "vase",
-    price: 102,
+    price: 320,
     discount: {
       amount: 0,
       percentage: 0
