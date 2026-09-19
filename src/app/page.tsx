@@ -158,6 +158,33 @@ export const newArrivalsData: Product[] = [
   },
    {
     id: 6,
+    title: "Handmade Porcelain Blossom Coffee Cup 01-22",
+    srcUrl: "/images/01-22/A06-223A.jpg",
+    gallery: [
+       "/images/01-22/A06-223A.jpg",
+       "/images/01-22/A06-223C.jpg",
+       "/images/01-22/A06-223D.jpg",
+       "/images/01-22/A06-223E.jpg",
+       "/images/01-22/A06-223F.jpg",
+       "/images/01-22/A06-226A.jpg",
+    ],
+    detailImages: [
+      "/images/01-22/detail/detail-50.jpg",
+      "/images/01-22/detail/detail-51.jpg",
+      "/images/01-22/detail/detail-52.jpg",
+      "/images/01-22/detail/detail-53.jpg",
+      "/images/01-22/detail/detail-54.jpg",
+    ],
+    category: "cup", // 杯子
+    price: 102,
+    discount: {
+      amount: 0,
+      percentage: 0
+    },
+    rating: 5
+  },
+   {
+    id: 7,
     title: "Artisan Porcelain Flower Tea Cup 01-21-1",
     srcUrl: "/images/01-22-1/A06-227A.jpg",
     gallery: [
