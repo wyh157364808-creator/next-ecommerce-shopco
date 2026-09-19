@@ -273,6 +273,132 @@ export const newArrivalsData: Product[] = [
       percentage: 0
     },
     rating: 5
+  },
+    {
+    id: 10,
+    title: "Handcrafted Porcelain Best Friend Cup 01-25",
+    srcUrl: "/images/01-25-couple/A06-253-2A.jpg",
+    gallery: [
+      "/images/01-25-couple/A06-253-2A.jpg",
+    ],
+    detailImages: [
+      "/images/01-25-couple/detail/detail-101.jpg",
+      "/images/01-25-couple/detail/detail-102.jpg",
+      "/images/01-25-couple/detail/detail-103.jpg",
+      "/images/01-25-couple/detail/detail-104.jpg",
+      "/images/01-25-couple/detail/detail-105.jpg",
+    ],
+    category: "cup", // 杯子
+    price: 102,
+    discount: {
+      amount: 0,
+      percentage: 0
+    },
+    rating: 5
+  },
+    {
+    id: 11,
+    title: "Handcrafted Porcelain Flower Cup 01-25",
+    srcUrl: "/images/01-25/A06-250A.jpg",
+    gallery: [
+      "/images/01-25/A06-250A.jpg",
+      "/images/01-25/A06-250B.jpg",
+    ],
+    detailImages: [
+      "/images/01-25/detail/detail-90.jpg",
+      "/images/01-25/detail/detail-91.jpg",
+      "/images/01-25/detail/detail-92.jpg",
+      "/images/01-25/detail/detail-93.jpg",
+      "/images/01-25/detail/detail-94.jpg",
+    ],
+    category: "cup", // 杯子
+    price: 102,
+    discount: {
+      amount: 0,
+      percentage: 0
+    },
+    rating: 5
+  },
+    {
+    id: 12,
+    title: "Handcrafted Porcelain Flower Cup 01-27",
+    srcUrl: "/images/01-27/A06-271A.jpg",
+    gallery: [
+      "/images/01-27/A06-271A.jpg",
+      "/images/01-27/A06-272A.jpg",
+      "/images/01-27/A06-272B.jpg",
+      "/images/01-27/A06-272C.jpg",
+      "/images/01-27/A06-272D.jpg",
+    ],
+    detailImages: [
+      "/images/01-27/detail/detail-110.jpg",
+      "/images/01-27/detail/detail-111.jpg",
+      "/images/01-27/detail/detail-112.jpg",
+      "/images/01-27/detail/detail-113.jpg",
+      "/images/01-27/detail/detail-114.jpg",
+    ],
+    category: "cup", // 杯子
+    price: 102,
+    discount: {
+      amount: 0,
+      percentage: 0
+    },
+    rating: 5
+  },
+  {
+    id: 13,
+    title: "Handcrafted Porcelain Flower Cup 01-29",
+    srcUrl: "/images/01-29/A06-291A.jpg",
+    gallery: [
+      "/images/01-29/A06-291A.jpg",
+      "/images/01-29/A06-291B.jpg",
+      "/images/01-29/A06-291C.jpg",
+      "/images/01-29/A06-294A.jpg",
+      "/images/01-29/A06-294B.jpg",
+      "/images/01-29/A06-294C.jpg",
+      "/images/01-29/A06-295A.jpg",
+    ],
+    detailImages: [
+      "/images/01-29/detail/detail-120.jpg",
+      "/images/01-29/detail/detail-121.jpg",
+      "/images/01-29/detail/detail-122.jpg",
+      "/images/01-29/detail/detail-123.jpg",
+      "/images/01-29/detail/detail-124.jpg",
+    ],
+    category: "cup", // 杯子
+    price: 102,
+    discount: {
+      amount: 0,
+      percentage: 0
+    },
+    rating: 5
+  },
+    {
+    id: 14,
+    title: "Handcrafted Porcelain Flower Cup 01-30",
+    srcUrl: "/images/01-30/A06-302A.jpg",
+    gallery: [
+      "/images/01-30/A06-302A.jpg",
+      "/images/01-30/A06-302B.jpg",
+      "/images/01-30/A06-303A.jpg",
+      "/images/01-30/A06-303B.jpg",
+      "/images/01-30/A06-303C.jpg",
+      "/images/01-30/A06-303D.jpg",
+    ],
+    detailImages: [
+      "/images/01-30/detail/detail-130.jpg",
+      "/images/01-30/detail/detail-131.jpg",
+      "/images/01-30/detail/detail-132.jpg",
+      "/images/01-30/detail/detail-133.jpg",
+      "/images/01-30/detail/detail-134.jpg",
+    ],
+    category: "cup", // 杯子
+    price: 102,
+    discount: {
+      amount: 0,
+      percentage: 0
+    },
+    rating: 5
   }
 ];
 
