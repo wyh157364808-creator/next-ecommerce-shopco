@@ -5,8 +5,9 @@ import Header from "@/components/homepage/Header";
 import Reviews from "@/components/homepage/Reviews";
 import { Product } from "@/types/product.types";
 import { Review } from "@/types/review.types";
+
 export const newArrivalsData: Product[] = [
-    {
+  {
     id: 1,
     title: "Handmade Flower Coffee Mug",
     srcUrl: "/images/01-17/A06-179A.jpg",
@@ -34,205 +35,116 @@ export const newArrivalsData: Product[] = [
     },
     rating: 5.0,
   },
-{
-  id: 2,
-  title: "Handmade Flower Coffee Mug 01-18",
-  srcUrl: "/images/01-18/A06-186-2A.jpg",
-  gallery: [
-    "/images/01-18/A06-186-2A.jpg",
-    "/images/01-18/A06-186B.jpg",
-    "/images/01-18/A06-186C-2A.jpg",
-    "/images/01-18/A06-186D-2A.jpg",
-    "/images/01-18/A06-186E-2A.jpg",
-    "/images/01-18/A06-186F-2A.jpg",
-    "/images/01-18/A06-186G-2A.jpg",
-    "/images/01-18/A06-186H-2A.jpg",
-    "/images/01-18/A06-189A-2A.jpg",
-    "/images/01-18/A06-189B-2A.jpg",
-  ],
-  detailImages: [
-    "/images/01-18/detail/detail-10.jpg",
-    "/images/01-18/detail/detail-11.jpg",
-    "/images/01-18/detail/detail-12.jpg",
-    "/images/01-18/detail/detail-13.jpg",
-    "/images/01-18/detail/detail-14.jpg",
-    "/images/01-18/detail/detail-15.jpg",
-  ],
-  category: "cup", // 杯子
-  price: 102,
-  discount: {
-    amount: 0,
-    percentage: 0,
-  },
-  rating: 5,
-},
- {
-  id: 3,
-  title: "Handmade Porcelain Flower Vase 01-19",
-  srcUrl: "/images/01-19/A06-190A.jpg",
-  gallery: [
-    "/images/01-19/A06-190A.jpg",
-    "/images/01-19/A06-190B.jpg",
-    "/images/01-19/A06-198A.jpg",
-    "/images/01-19/A06-198B.jpg",
-    "/images/01-19/A06-198C.jpg",
-    "/images/01-19/A06-198D.jpg",
-    "/images/01-19/A06-198E.jpg",
-    "/images/01-19/A06-198F.jpg",
-    "/images/01-19/A06-198G.jpg",
-    "/images/01-19/A06-199A.jpg",
-    "/images/01-19/A06-199B.jpg",
-    "/images/01-19/A06-199C.jpg"
-  ],
+  {
+    id: 2,
+    title: "Handmade Flower Coffee Mug 01-18",
+    srcUrl: "/images/01-18/A06-186-2A.jpg",
+    gallery: [
+      "/images/01-18/A06-186-2A.jpg",
+      "/images/01-18/A06-186B.jpg",
+      "/images/01-18/A06-186C-2A.jpg",
+      "/images/01-18/A06-186D-2A.jpg",
+      "/images/01-18/A06-186E-2A.jpg",
+      "/images/01-18/A06-186F-2A.jpg",
+      "/images/01-18/A06-186G-2A.jpg",
+      "/images/01-18/A06-186H-2A.jpg",
+      "/images/01-18/A06-189A-2A.jpg",
+      "/images/01-18/A06-189B-2A.jpg",
+    ],
     detailImages: [
-    "/images/01-19/detail/detail-20.jpg",
-    "/images/01-19/detail/detail-21.jpg",
-    "/images/01-19/detail/detail-22.jpg",
-    "/images/01-19/detail/detail-23.jpg"
-  ],
-  category: "cup", // 杯子
-  price: 102,
-  discount: {
-    amount: 0,
-    percentage: 0
-  },
-  rating: 5,
-},
- {
-  id: 4,
-  title: "Handmade Porcelain Flower Cup 01-20",
-  srcUrl: "/images/01-20/A06-203A.jpg",
-  gallery: [
-    "/images/01-20/A06-203A.jpg",
-    "/images/01-20/A06-206A.jpg",
-    "/images/01-20/A06-206B.jpg",
-    "/images/01-20/A06-206C.jpg",
-    "/images/01-20/A06-207A.jpg",
-    "/images/01-20/A06-207B.jpg",
-    "/images/01-20/A06-207C.jpg",
-    "/images/01-20/A06-207D.jpg",
-    "/images/01-20/A06-208A.jpg",
-    "/images/01-20/A06-208B.jpg"
-  ],
-     detailImages: [
-    "/images/01-20/detail/detail-30.jpg",
-    "/images/01-20/detail/detail-31.jpg",
-    "/images/01-20/detail/detail-32.jpg",
-    "/images/01-20/detail/detail-33.jpg",
-    "/images/01-20/detail/detail-34.jpg",
-    "/images/01-20/detail/detail-35.jpg"
-  ],
-  category: "cup", // 杯子
-  price: 102,
-  discount: {
-    amount: 0,
-    percentage: 0
-  },
-  rating: 5
-}
-];
-export const topSellingData: Product[] = [
-  {
-    id: 5,
-    title: "Vertical Striped Shirt",
-    srcUrl: "/images/pic5.png",
-    gallery: ["/images/pic5.png", "/images/pic10.png", "/images/pic11.png"],
-    price: 232,
-    discount: {
-      amount: 0,
-      percentage: 20,
-    },
-    rating: 5.0,
-  },
-  {
-    id: 6,
-    title: "Courage Graphic T-shirt",
-    srcUrl: "/images/pic6.png",
-    gallery: ["/images/pic6.png", "/images/pic10.png", "/images/pic11.png"],
-    price: 145,
+      "/images/01-18/detail/detail-10.jpg",
+      "/images/01-18/detail/detail-11.jpg",
+      "/images/01-18/detail/detail-12.jpg",
+      "/images/01-18/detail/detail-13.jpg",
+      "/images/01-18/detail/detail-14.jpg",
+      "/images/01-18/detail/detail-15.jpg",
+    ],
+    category: "cup", // 杯子
+    price: 102,
     discount: {
       amount: 0,
       percentage: 0,
     },
-    rating: 4.0,
+    rating: 5,
   },
   {
-    id: 7,
-    title: "Loose Fit Bermuda Shorts",
-    srcUrl: "/images/pic7.png",
-    gallery: ["/images/pic7.png"],
-    price: 80,
+    id: 3,
+    title: "Handmade Porcelain Flower Vase 01-19",
+    srcUrl: "/images/01-19/A06-190A.jpg",
+    gallery: [
+      "/images/01-19/A06-190A.jpg",
+      "/images/01-19/A06-190B.jpg",
+      "/images/01-19/A06-198A.jpg",
+      "/images/01-19/A06-198B.jpg",
+      "/images/01-19/A06-198C.jpg",
+      "/images/01-19/A06-198D.jpg",
+      "/images/01-19/A06-198E.jpg",
+      "/images/01-19/A06-198F.jpg",
+      "/images/01-19/A06-198G.jpg",
+      "/images/01-19/A06-199A.jpg",
+      "/images/01-19/A06-199B.jpg",
+      "/images/01-19/A06-199C.jpg"
+    ],
+    detailImages: [
+      "/images/01-19/detail/detail-20.jpg",
+      "/images/01-19/detail/detail-21.jpg",
+      "/images/01-19/detail/detail-22.jpg",
+      "/images/01-19/detail/detail-23.jpg"
+    ],
+    category: "vase", //❗这里修正！01-19是花瓶，原来写cup错了
+    price: 102,
     discount: {
       amount: 0,
-      percentage: 0,
+      percentage: 0
     },
-    rating: 3.0,
+    rating: 5,
   },
   {
-    id: 8,
-    title: "Faded Skinny Jeans",
-    srcUrl: "/images/pic8.png",
-    gallery: ["/images/pic8.png"],
-    price: 210,
+    id: 4,
+    title: "Handmade Porcelain Flower Cup 01-20",
+    srcUrl: "/images/01-20/A06-203A.jpg",
+    gallery: [
+      "/images/01-20/A06-203A.jpg",
+      "/images/01-20/A06-206A.jpg",
+      "/images/01-20/A06-206B.jpg",
+      "/images/01-20/A06-206C.jpg",
+      "/images/01-20/A06-207A.jpg",
+      "/images/01-20/A06-207B.jpg",
+      "/images/01-20/A06-207C.jpg",
+      "/images/01-20/A06-207D.jpg",
+      "/images/01-20/A06-208A.jpg",
+      "/images/01-20/A06-208B.jpg"
+    ],
+    detailImages: [
+      "/images/01-20/detail/detail-30.jpg",
+      "/images/01-20/detail/detail-31.jpg",
+      "/images/01-20/detail/detail-32.jpg",
+      "/images/01-20/detail/detail-33.jpg",
+      "/images/01-20/detail/detail-34.jpg",
+      "/images/01-20/detail/detail-35.jpg"
+    ],
+    category: "cup", // 杯子
+    price: 102,
     discount: {
       amount: 0,
-      percentage: 0,
+      percentage: 0
     },
-    rating: 4.5,
-  },
+    rating: 5
+  }
 ];
 
-export const relatedProductData: Product[] = [
-  {
-    id: 12,
-    title: "Polo with Contrast Trims",
-    srcUrl: "/images/pic12.png",
-    gallery: ["/images/pic12.png", "/images/pic10.png", "/images/pic11.png"],
-    price: 242,
-    discount: {
-      amount: 0,
-      percentage: 20,
-    },
-    rating: 4.0,
-  },
-  {
-    id: 13,
-    title: "Gradient Graphic T-shirt",
-    srcUrl: "/images/pic13.png",
-    gallery: ["/images/pic13.png", "/images/pic10.png", "/images/pic11.png"],
-    price: 145,
-    discount: {
-      amount: 0,
-      percentage: 0,
-    },
-    rating: 3.5,
-  },
-  {
-    id: 14,
-    title: "Polo with Tipping Details",
-    srcUrl: "/images/pic14.png",
-    gallery: ["/images/pic14.png"],
-    price: 180,
-    discount: {
-      amount: 0,
-      percentage: 0,
-    },
-    rating: 4.5,
-  },
-  {
-    id: 15,
-    title: "Black Striped T-shirt",
-    srcUrl: "/images/pic15.png",
-    gallery: ["/images/pic15.png"],
-    price: 150,
-    discount: {
-      amount: 0,
-      percentage: 30,
-    },
-    rating: 5.0,
-  },
+// ✅ topSellingData 清空模板T恤，放你的爆款产品
+export const topSellingData: Product[] = [
+  // 后续新增产品放这里，现在先空着也可以
 ];
+
+// ✅ relatedProductData 清空模板T恤（这个数组给详情页YOU MIGHT ALSO LIKE使用）
+export const relatedProductData: Product[] = [
+  // 这里不用填，详情页我们已经写了随机取全部产品，这个数组现在清空
+];
+
 export const reviewsData: Review[] = [];
+
 export default function Home() {
   return (
     <>
