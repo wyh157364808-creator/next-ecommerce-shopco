@@ -241,6 +241,38 @@ export const newArrivalsData: Product[] = [
       percentage: 0
     },
     rating: 5
+  },
+    {
+    id: 9,
+    title: "Handcrafted Porcelain Flower Tea Cup 01-24",
+    srcUrl: "/images/01-24/A06-243A.jpg",
+    gallery: [
+      "/images/01-24/A06-243A.jpg",
+      "/images/01-24/A06-243B.jpg",
+      "/images/01-24/A06-243C.jpg",
+      "/images/01-24/A06-244A.jpg",
+      "/images/01-24/A06-244B.jpg",
+      "/images/01-24/A06-244C.jpg",
+      "/images/01-24/A06-244D.jpg",
+      "/images/01-24/A06-246A.jpg",
+      "/images/01-24/A06-246B.jpg",
+      "/images/01-24/A06-246C.jpg",
+      "/images/01-24/A06-249A.jpg",
+    ],
+    detailImages: [
+      "/images/01-24/detail/detail-80.jpg",
+      "/images/01-24/detail/detail-81.jpg",
+      "/images/01-24/detail/detail-82.jpg",
+      "/images/01-24/detail/detail-83.jpg",
+      "/images/01-24/detail/detail-84.jpg",
+    ],
+    category: "cup", // 杯子
+    price: 102,
+    discount: {
+      amount: 0,
+      percentage: 0
+    },
+    rating: 5
   }
 ];
 
