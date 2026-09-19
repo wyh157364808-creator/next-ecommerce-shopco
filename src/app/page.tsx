@@ -495,6 +495,31 @@ export const topSellingData: Product[] = [
       percentage: 0
     },
     rating: 5
+  },
+    {
+    id: 19,
+    title: "Handmade Porcelain Flower Vase 53",
+    srcUrl: "/images/53/A26-254A.jpg",
+    gallery: [
+      "/images/53/A26-254A.jpg",
+      "/images/53/A26-254B.jpg",
+      "/images/53/A26-254C.jpg",
+      "/images/53/A26-254D.jpg",
+      "/images/53/A26-254E.jpg",
+    ],
+    detailImages: [
+      "/images/53/detail/detail-600.jpg",
+      "/images/53/detail/detail-601.jpg",
+      "/images/53/detail/detail-602.jpg",
+      "/images/53/detail/detail-603.jpg",
+    ],
+    category: "vase",
+    price: 102,
+    discount: {
+      amount: 0,
+      percentage: 0
+    },
+    rating: 5
   }
 ];
 // ✅ relatedProductData 清空模板T恤（这个数组给详情页YOU MIGHT ALSO LIKE使用）
