@@ -529,7 +529,7 @@ export const relatedProductData: Product[] = [
 
 export const reviewsData: Review[] = [];
 export default function Home() {
-    return (
+      return (
     <>
       <Header />
       <Brands />
@@ -552,7 +552,7 @@ export default function Home() {
         <div className="mb-[50px] sm:mb-20">
           {/* <DressStyle /> */}
         </div>
-        <Reviews data={reviewsData} />
+        {/* <Reviews data={reviewsData} /> */}
       </main>
     </>
   );
