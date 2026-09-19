@@ -534,19 +534,19 @@ export default function Home() {
       <Header />
       <Brands />
       <main className="my-[50px] sm:my-[72px]">
-        <ProductListSec
-          title="Fresh Flower Cups"
-          data={newArrivalsData}
-          viewAllLink="/shop#new-arrivals"
-        />
+           <ProductListSec
+            title="Handmade Flower Coffee Mugs"
+            data={newArrivalsData}
+            viewAllLink="/shop?category=cup"
+          />
         <div className="max-w-frame mx-auto px-4 xl:px-0">
           <hr className="h-[1px] border-t-black/10 my-10 sm:my-16" />
         </div>
         <div className="mb-[50px] sm:mb-20">
           <ProductListSec
-            title="Chinese Minimalist Porcelain Vases"
-            data={topSellingData}
-            viewAllLink="/shop#top-selling"
+         title="CHINESE MINIMALIST PORCELAIN VASES"
+         data={topSellingData}
+         viewAllLink="/shop?category=vase"
           />
         </div>
         <div className="mb-[50px] sm:mb-20">
