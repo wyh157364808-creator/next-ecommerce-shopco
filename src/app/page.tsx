@@ -69,7 +69,7 @@ export const newArrivalsData: Product[] = [
   },
   {
     id: 3,
-    title: "Handmade Porcelain Flower Vase 01-19",
+    title: "Artisan Porcelain Blossom Mug 01-19",
     srcUrl: "/images/01-19/A06-190A.jpg",
     gallery: [
       "/images/01-19/A06-190A.jpg",
