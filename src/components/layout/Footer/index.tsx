@@ -2,7 +2,8 @@ import { cn } from "@/lib/utils";
 import { integralCF } from "@/styles/fonts";
 import React from "react";
 import { PaymentBadge, SocialNetworks } from "./footer.types";
-import { FaFacebookF, FaGithub, FaInstagram, FaTwitter } from "react-icons/fa";
+import { FaFacebookF, FaYoutube, FaInstagram } from "react-icons/fa";
+import { FaTiktok } from "react-icons/fa6";
 import Link from "next/link";
 import LinksSection from "./LinksSection";
 import Image from "next/image";
@@ -12,26 +13,25 @@ import LayoutSpacing from "./LayoutSpacing";
 const socialsData: SocialNetworks[] = [
   {
     id: 1,
-    icon: <FaTwitter />,
-    url: "https://twitter.com",
+    icon: <FaFacebookF />,
+    url: "https://www.facebook.com/profile.php?id=61586931688105",
   },
   {
     id: 2,
-    icon: <FaFacebookF />,
-    url: "https://facebook.com",
+    icon: <FaInstagram />,
+    url: "https://www.instagram.com/mendedtea/",
   },
   {
     id: 3,
-    icon: <FaInstagram />,
-    url: "https://instagram.com",
+    icon: <FaTiktok />,
+    url: "https://www.tiktok.com/@mendedtea.com",
   },
   {
     id: 4,
-    icon: <FaGithub />,
-    url: "https://github.com/mohammadoftadeh",
+    icon: <FaYoutube />,
+    url: "https://www.youtube.com/channel/UC3kNk_xWKrYmm0nfKnwpkeQ",
   },
 ];
-
 const paymentBadgesData: PaymentBadge[] = [
   {
     id: 1,
