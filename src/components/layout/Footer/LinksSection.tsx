@@ -2,7 +2,6 @@ import React from "react";
 import { FooterLinks } from "./footer.types";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
-
 const footerLinksData: FooterLinks[] = [
   {
     id: 1,
@@ -10,23 +9,18 @@ const footerLinksData: FooterLinks[] = [
     children: [
       {
         id: 11,
-        label: "about",
-        url: "#",
+        label: "about us",
+        url: "/about",
       },
       {
         id: 12,
-        label: "features",
-        url: "#",
+        label: "our story",
+        url: "/story",
       },
       {
         id: 13,
-        label: "works",
-        url: "#",
-      },
-      {
-        id: 14,
-        label: "career",
-        url: "#",
+        label: "contact us",
+        url: "/contact",
       },
     ],
   },
@@ -37,22 +31,27 @@ const footerLinksData: FooterLinks[] = [
       {
         id: 21,
         label: "customer support",
-        url: "#",
+        url: "/support",
       },
       {
         id: 22,
-        label: "delivery details",
-        url: "#",
+        label: "shipping info",
+        url: "/shipping",
       },
       {
         id: 23,
-        label: "terms & conditions",
-        url: "#",
+        label: "returns & refunds",
+        url: "/returns",
       },
       {
         id: 24,
+        label: "terms & conditions",
+        url: "/terms",
+      },
+      {
+        id: 25,
         label: "privacy policy",
-        url: "#",
+        url: "/privacy",
       },
     ],
   },
@@ -62,23 +61,23 @@ const footerLinksData: FooterLinks[] = [
     children: [
       {
         id: 31,
-        label: "account",
-        url: "#",
+        label: "orders",
+        url: "/faq#orders",
       },
       {
         id: 32,
-        label: "manage deliveries",
-        url: "#",
+        label: "payment",
+        url: "/faq#payment",
       },
       {
         id: 33,
-        label: "orders",
-        url: "#",
+        label: "tracking",
+        url: "/faq#tracking",
       },
       {
         id: 34,
-        label: "payments",
-        url: "#",
+        label: "pottery care",
+        url: "/faq#care",
       },
     ],
   },
@@ -88,28 +87,22 @@ const footerLinksData: FooterLinks[] = [
     children: [
       {
         id: 41,
-        label: "Free eBooks",
-        url: "#",
+        label: "pottery blog",
+        url: "/blog",
       },
       {
         id: 42,
-        label: "development tutorial",
-        url: "#",
+        label: "ceramic care guide",
+        url: "/care-guide",
       },
       {
         id: 43,
-        label: "How to - Blog",
-        url: "#",
-      },
-      {
-        id: 44,
-        label: "youtube playlist",
-        url: "#",
+        label: "tutorial videos",
+        url: "/tutorials",
       },
     ],
   },
 ];
-
 const LinksSection = () => {
   return (
     <>
@@ -123,7 +116,6 @@ const LinksSection = () => {
               href={link.url}
               key={link.id}
               className={cn([
-                link.id !== 41 && link.id !== 43 && "capitalize",
                 "text-black/60 text-sm md:text-base mb-4 w-fit",
               ])}
             >
@@ -135,5 +127,4 @@ const LinksSection = () => {
     </>
   );
 };
-
 export default LinksSection;
