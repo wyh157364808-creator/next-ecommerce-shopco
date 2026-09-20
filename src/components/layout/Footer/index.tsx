@@ -1,130 +1,70 @@
-import { cn } from "@/lib/utils";
-import { integralCF } from "@/styles/fonts";
-import React from "react";
-import { PaymentBadge, SocialNetworks } from "./footer.types";
-import { FaFacebookF, FaGithub, FaInstagram, FaTwitter } from "react-icons/fa";
 import Link from "next/link";
-import LinksSection from "./LinksSection";
-import Image from "next/image";
-import NewsLetterSection from "./NewsLetterSection";
-import LayoutSpacing from "./LayoutSpacing";
+import React from "react";
 
-const socialsData: SocialNetworks[] = [
-  {
-    id: 1,
-    icon: <FaTwitter />,
-    url: "https://twitter.com",
-  },
-  {
-    id: 2,
-    icon: <FaFacebookF />,
-    url: "https://facebook.com",
-  },
-  {
-    id: 3,
-    icon: <FaInstagram />,
-    url: "https://instagram.com",
-  },
-];
-const paymentBadgesData: PaymentBadge[] = [
-  {
-    id: 1,
-    srcUrl: "/icons/Visa.svg",
-  },
-  {
-    id: 2,
-    srcUrl: "/icons/mastercard.svg",
-  },
-  {
-    id: 3,
-    srcUrl: "/icons/paypal.svg",
-  },
-  {
-    id: 4,
-    srcUrl: "/icons/applePay.svg",
-  },
-  {
-    id: 5,
-    srcUrl: "/icons/googlePay.svg",
-  },
-];
-
-const Footer = () => {
-  return (
-    <footer className="mt-10">
-      <div className="relative">
-        <div className="absolute bottom-0 w-full h-1/2 bg-[#F0F0F0]"></div>
-        <div className="px-4">
-          <NewsLetterSection />
-        </div>
-      </div>
-      <div className="pt-8 md:pt-[50px] bg-[#F0F0F0] px-4 pb-4">
-        <div className="max-w-frame mx-auto">
-          <nav className="lg:grid lg:grid-cols-12 mb-8">
-            <div className="flex flex-col lg:col-span-3 lg:max-w-[248px]">
-            <h1
-             className={cn([
-              integralCF.className,
-                 "text-[28px] lg:text-[32px] mb-6",
-                    ])}
-                      >
-                       BEI Pottery
-                      </h1>
-                  <p className="text-black/60 text-sm mb-9">
-                  Handcrafted Chinese ceramic art. Unique handmade cups and vases for your home.
-                      </p>
-              <div className="flex items-center">
-                {socialsData.map((social) => (
-                  <Link
-                    href={social.url}
-                    key={social.id}
-                    className="bg-white hover:bg-black hover:text-white transition-all mr-3 w-7 h-7 rounded-full border border-black/20 flex items-center justify-center p-1.5"
-                  >
-                    {social.icon}
-                  </Link>
-                ))}
-              </div>
-            </div>
-            <div className="hidden lg:grid col-span-9 lg:grid-cols-4 lg:pl-10">
-              <LinksSection />
-            </div>
-            <div className="grid lg:hidden grid-cols-2 sm:grid-cols-4">
-              <LinksSection />
-            </div>
-          </nav>
-
-          <hr className="h-[1px] border-t-black/10 mb-6" />
-          <div className="flex flex-col sm:flex-row justify-center sm:justify-between items-center mb-2">
-             <p className="text-sm text-center sm:text-left text-black/60 mb-4 sm:mb-0 sm:mr-1">
-                   © 2026 BEI Pottery. All rights reserved.
-           </p>
-            </p>
-            <div className="flex items-center">
-              {paymentBadgesData.map((badge, _, arr) => (
-                <span
-                  key={badge.id}
-                  className={cn([
-                    arr.length !== badge.id && "mr-3",
-                    "w-[46px] h-[30px] rounded-[5px] border-[#D6DCE5] bg-white flex items-center justify-center",
-                  ])}
-                >
-                  <Image
-                    priority
-                    src={badge.srcUrl}
-                    width={33}
-                    height={100}
-                    alt="user"
-                    className="max-h-[15px]"
-                  />
-                </span>
-              ))}
-            </div>
-          </div>
-        </div>
-        <LayoutSpacing />
-      </div>
-    </footer>
-  );
+type LinkItem = {
+  title: string;
+  href: string;
+};
+type LinksCol = {
+  title: string;
+  links: LinkItem[];
 };
 
-export default Footer;
+const linksData: LinksCol[] = [
+  {
+    title: "COMPANY",
+    links: [
+      { title: "About Us", href: "/about" },
+      { title: "Our Story", href: "/story" },
+      { title: "Contact Us", href: "/contact" },
+    ],
+  },
+  {
+    title: "HELP",
+    links: [
+      { title: "Customer Support", href: "/support" },
+      { title: "Shipping Info", href: "/shipping" },
+      { title: "Returns & Refunds", href: "/returns" },
+      { title: "Privacy Policy", href: "/privacy" },
+      { title: "Terms & Conditions", href: "/terms" },
+    ],
+  },
+  {
+    title: "FAQ",
+    links: [
+      { title: "Orders", href: "/faq#orders" },
+      { title: "Payment", href: "/faq#payment" },
+      { title: "Tracking", href: "/faq#tracking" },
+      { title: "Product Care", href: "/faq#care" },
+    ],
+  },
+  {
+    title: "RESOURCES",
+    links: [
+      { title: "Pottery Blog", href: "/blog" },
+      { title: "Care Guide", href: "/care-guide" },
+      { title: "Tutorial Videos", href: "/tutorials" },
+    ],
+  },
+];
+const LinksSection = () => {
+  return (
+    <>
+      {linksData.map((column) => (
+        <div key={column.title} className="mb-6 lg:mb-0">
+          <h3 className="font-bold text-base mb-4 uppercase tracking-wide">{column.title}</h3>
+          <ul className="space-y-3 text-sm text-black/60">
+            {column.links.map((link) => (
+              <li key={link.title}>
+                <Link href={link.href} className="hover:text-black transition">
+                  {link.title}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+      ))}
+    </>
+  );
+};
+export default LinksSection;
