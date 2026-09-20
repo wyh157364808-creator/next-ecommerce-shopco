@@ -50,7 +50,7 @@ const linksData: LinksCol[] = [
 
 const LinksSection = () => {
   return (
-    <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 w-full text-left">
+    <>
       {linksData.map((column) => (
         <div key={column.title} className="mb-6 lg:mb-0">
           <h3 className="font-bold text-base mb-4 uppercase tracking-wide">{column.title}</h3>
@@ -65,7 +65,7 @@ const LinksSection = () => {
           </ul>
         </div>
       ))}
-    </div>
+    </>
   );
 };
 
