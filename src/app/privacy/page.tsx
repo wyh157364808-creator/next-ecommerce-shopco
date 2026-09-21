@@ -80,7 +80,7 @@ export default function PrivacyPage() {
         <h2 className="text-2xl font-semibold mt-8 mb-3">10. Contact Us</h2>
         <p>
           If you have any questions or concerns about this Privacy Policy or how we handle your data,
-          please contact us at hello@beipottery.com.
+          please contact us at mendedtea@gmail.com.
         </p>
       </div>
     </div>
