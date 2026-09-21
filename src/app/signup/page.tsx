@@ -2,7 +2,6 @@
 import { useState } from "react";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
 import { cn } from "@/lib/utils";
 import { integralCF } from "@/styles/fonts";
 
@@ -20,7 +19,6 @@ export default function SignUpPage() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // 这里是前端简单校验，后端注册逻辑后续再接入
     if (formData.password !== formData.confirmPassword) {
       alert("Passwords do not match");
       return;
@@ -36,36 +34,36 @@ export default function SignUpPage() {
       </h1>
       <form onSubmit={handleSubmit} className="space-y-5">
         <div>
-          <Input
+          <input
             type="email"
             name="email"
             placeholder="Your Email Address"
             value={formData.email}
             onChange={handleChange}
             required
-            className="py-5"
+            className="w-full px-4 py-3 rounded-lg border border-black/20 focus:outline-none focus:border-black"
           />
         </div>
         <div>
-          <Input
+          <input
             type="password"
             name="password"
             placeholder="Password"
             value={formData.password}
             onChange={handleChange}
             required
-            className="py-5"
+            className="w-full px-4 py-3 rounded-lg border border-black/20 focus:outline-none focus:border-black"
           />
         </div>
         <div>
-          <Input
+          <input
             type="password"
             name="confirmPassword"
             placeholder="Confirm Password"
             value={formData.confirmPassword}
             onChange={handleChange}
             required
-            className="py-5"
+            className="w-full px-4 py-3 rounded-lg border border-black/20 focus:outline-none focus:border-black"
           />
         </div>
         <Button type="submit" className="w-full rounded-full py-5 bg-black hover:bg-black/80">
