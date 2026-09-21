@@ -3,17 +3,14 @@ import React from "react";
 export default function TutorialsPage() {
   const tutorials = [
     {
-      title: "How to Prepare Your Mug for Hot Drinks",
-      desc: "Simple steps to warm your handmade cup and avoid cracking when pouring hot coffee or tea.",
+      title: "Handmade Rose Cup — Shaping a Ceramic Rose, Petal by Petal 🌹",
+      desc: "Watch the full process of sculpting a beautiful handmade rose ceramic cup step by step.",
+      videoId: "XD6e5fpR2EM",
     },
     {
-      title: "Cleaning Stains from Ceramic Glaze",
-      desc: "Natural, safe ways to remove coffee and tea stains without damaging your pottery.",
-    },
-    {
-      title: "Handmade Pottery 101: How Clay Becomes A Mug",
-      desc: "Learn the full process: wheel throwing, trimming, glazing and kiln firing.",
-      videoId: "XD6e5fpR2EM", // 你的Youtube视频ID
+      title: "A Cup Inspired by Wallum – Quiet Hands, Wild Flowers, Clay 🌸",
+      desc: "This video shows how wild flowers inspired this unique hand-thrown pottery cup design.",
+      videoId: "zHvzVxBlI8U",
     },
   ];
   return (
@@ -24,18 +21,16 @@ export default function TutorialsPage() {
           <div key={idx} className="border-b pb-8">
             <h2 className="text-2xl font-semibold mb-2">{item.title}</h2>
             <p className="text-lg text-gray-700 mb-4">{item.desc}</p>
-            {item.videoId && (
-              <iframe
-                width="100%"
-                height="420"
-                src={`https://www.youtube.com/embed/${item.videoId}`}
-                title={item.title}
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowFullScreen
-                className="rounded-lg"
-              ></iframe>
-            )}
+            <iframe
+              width="100%"
+              height="420"
+              src={`https://www.youtube.com/embed/${item.videoId}`}
+              title={item.title}
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+              className="rounded-lg"
+            ></iframe>
           </div>
         ))}
       </div>
