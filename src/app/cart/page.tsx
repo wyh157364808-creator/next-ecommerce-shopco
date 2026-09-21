@@ -1,5 +1,4 @@
 "use client";
-
 import BreadcrumbCart from "@/components/cart-page/BreadcrumbCart";
 import ProductCard from "@/components/cart-page/ProductCard";
 import { Button } from "@/components/ui/button";
@@ -13,12 +12,10 @@ import React from "react";
 import { RootState } from "@/lib/store";
 import { useAppSelector } from "@/lib/hooks/redux";
 import Link from "next/link";
-
 export default function CartPage() {
   const { cart, totalPrice, adjustedTotalPrice } = useAppSelector(
     (state: RootState) => state.carts
   );
-
   return (
     <main className="pb-20">
       <div className="max-w-frame mx-auto px-4 xl:px-0">
@@ -79,6 +76,8 @@ export default function CartPage() {
                     </span>
                   </div>
                 </div>
+                {/* 促销代码区域，暂时隐藏，后续启用修改false为true */}
+                {false && (
                 <div className="flex space-x-3">
                   <InputGroup className="bg-[#F0F0F0]">
                     <InputGroup.Text>
@@ -98,6 +97,7 @@ export default function CartPage() {
                     Apply
                   </Button>
                 </div>
+                )}
                 <Button
                   type="button"
                   className="text-sm md:text-base font-medium bg-black rounded-full w-full py-4 h-[54px] md:h-[60px] group"
